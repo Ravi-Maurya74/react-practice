@@ -4,7 +4,8 @@ import Post from "./components/Post";
 function App() {
   return (
     <>
-      <Post />
+      <Post author="Maximilian" body="React.js is awesome." />
+      <Post author="Maximilian" body="Checkout this course." />
     </>
   );
 }

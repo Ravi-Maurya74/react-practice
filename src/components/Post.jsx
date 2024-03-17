@@ -1,13 +1,14 @@
 import React from "react";
 
-const names = ["Maximilian", "Manuel", "Julia"];
-
-const Post = () => {
-  const chosenName = names[Math.floor(Math.random() * names.length)];
+const Post = (props) => {
   return (
-    <div>
-      <p>{chosenName}</p>
-      <p>React is great!</p>
+    <div className=" p-4 rounded-lg bg-post-bg my-4 shadow animate-post-animation">
+      <p className="text-sm m-0 font-bold text-author-text uppercase">
+        {props.author}
+      </p>
+      <p className=" whitespace-pre-wrap text-xl ml-1 text-post-text italic">
+        {props.body}
+      </p>
     </div>
   );
 };
